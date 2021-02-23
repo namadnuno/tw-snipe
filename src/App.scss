@@ -1,0 +1,164 @@
+body {
+  background-attachment: fixed;
+  background-color: #d2c09e;
+  background-image: url(https://dspt.innogamescdn.com/asset/4ba99e83/graphic/background/bg-image.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  font-size: 9pt;
+  font-family: Verdana, Arial;
+  width: 100%;
+  margin: 0;
+  padding: 0 0 35px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.container {
+  min-height: 100vh;
+  width: 954px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  position: relative;
+  background: #e3d5b3 url(https://dspt.innogamescdn.com/asset/4ba99e83/graphic/index/main_bg.jpg);
+
+  .bg-left {
+    width: 25px;
+    overflow: hidden;
+    vertical-align: top;
+    background: transparent url(https://dspt.innogamescdn.com/asset/4ba99e83/graphic/index/mainborder-left.png) scroll left top repeat-y;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+    height: 100%;
+  }
+
+  .bg-right {
+    width: 25px;
+    height: 100%;
+    overflow: hidden;
+    vertical-align: top;
+    background: transparent url(https://dspt.innogamescdn.com/asset/4ba99e83/graphic/index/mainborder-right.png) scroll right top repeat-y;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 2;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+.f-group {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.f-group label, .unit-list label {
+  font-size: 15px;
+  margin-right: 15px;
+}
+
+.unit-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.unit-list button img {
+  width: 18px;
+}
+
+
+input {
+  text-rendering: auto;
+  color: black;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: textfield;
+  background-color: rgb(255, 255, 255);
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+  padding: 1px 2px;
+  border-collapse: separate;
+  border-width: 2px;
+  border-style: inset;
+  border-color:rgb(133, 133, 133);
+  border-image: initial;
+  outline: none;
+  font-size: 13pt;
+  border-radius: 3px;
+}
+
+button {
+  display: inline-block;
+  padding: 3px;
+  margin: 0 2px;
+  text-align: center;
+  font-family: Verdana, Arial;
+  font-size: 12px !important;
+  font-weight: bold;
+  line-height: normal;
+  cursor: pointer;
+  background: #6c4824;
+  background: linear-gradient(to bottom, #947a62 0%,#7b5c3d 22%,#6c4824 30%,#6c4824 100%);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  color: #fff;
+  white-space: nowrap;
+}
+
+button.is-selected, button:hover {
+  background: #e2a738;
+  background: linear-gradient(to bottom, #e5d7b4 0%,#886b4d 22%,#8f6133 30%,#6c4d2d 100%);
+  color: #fff;
+  text-decoration: none;
+}
+
+.result {
+  color: #000;
+
+  .line {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    .label {
+      font-size: 12px;
+      font-weight: bold;
+      margin-right: 25px;
+    }
+
+    .value {
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    a.value {
+      font-weight: 700;
+      text-decoration: none;
+      color: #603000;
+    }
+  }
+}
